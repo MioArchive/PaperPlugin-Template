@@ -54,7 +54,7 @@ tasks {
 
     defaultTasks("build")
 
-    val version = "1.21.1"
+    val version = "1.21.4"
     val javaVersion = JavaLanguageVersion.of(21)
 
     val jvmArgsExternal = listOf(
