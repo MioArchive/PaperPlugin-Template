@@ -1,4 +1,4 @@
-package net.javamio.template.command;
+package net.javamio.template.command.bukkit;
 
 import net.javamio.template.PaperPlugin;
 import org.bukkit.Bukkit;

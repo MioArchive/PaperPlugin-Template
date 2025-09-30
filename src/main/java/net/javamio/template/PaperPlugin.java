@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 @Getter
 public class PaperPlugin extends JavaPlugin {
 
-    public static Logger LOGGER = Logger.getLogger("PaperPlugin-Template");
+    public static final Logger LOGGER = Logger.getLogger("PaperPlugin-Template");
 
     @Getter
     private static PaperPlugin instance;
