@@ -55,7 +55,7 @@ tasks {
 
     defaultTasks("build")
 
-    val version = "1.21.4"
+    val version = "1.21.8"
     val javaVersion = JavaLanguageVersion.of(21)
 
     val jvmArgsExternal = listOf(
@@ -71,8 +71,8 @@ tasks {
         }
 
         downloadPlugins {
-            url("https://github.com/ViaVersion/ViaVersion/releases/download/5.4.2/ViaVersion-5.4.2.jar")
-            url("https://github.com/ViaVersion/ViaBackwards/releases/download/5.4.2/ViaBackwards-5.4.2.jar")
+            url("https://github.com/ViaVersion/ViaVersion/releases/download/5.5.1/ViaVersion-5.5.1.jar")
+            url("https://github.com/ViaVersion/ViaBackwards/releases/download/5.5.1/ViaBackwards-5.5.1.jar")
         }
 
         jvmArgs = jvmArgsExternal
