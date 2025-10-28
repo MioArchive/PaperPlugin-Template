@@ -13,6 +13,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
+@SuppressWarnings("unused")
 public abstract class BukkitCommand extends Command {
 
     private final String permission;
