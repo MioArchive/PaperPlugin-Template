@@ -13,13 +13,13 @@ repositories {
     mavenLocal()
     mavenCentral()
 
-    //PaperMC
+    // PaperMC
     maven("https://repo.papermc.io/repository/maven-public/")
 }
 
 dependencies {
-    implementation(libs.commandapi)
     compileOnly(libs.paper.api)
+
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)
 }
