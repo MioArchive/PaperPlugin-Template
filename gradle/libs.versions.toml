@@ -1,6 +1,6 @@
 [versions]
 paper-api = "1.21-R0.1-SNAPSHOT"
-lombok = "1.18.46"
+lombok = "1.18.48"
 cloud-paper = "2.0.1"
 shadow = "9.5.1"
 run-paper = "3.1.0"
