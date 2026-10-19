@@ -19,6 +19,7 @@ repositories {
 
 dependencies {
     compileOnly(libs.paper.api)
+    implementation(libs.cloud.paper)
 
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)
@@ -33,6 +34,8 @@ tasks {
         archiveFileName = "${rootProject.name}-${project.version}.jar"
         archiveClassifier = null
 
+        relocate("org.incendo.cloud", "net.javamio.template.libs.cloud")
+        relocate("io.leangen.geantyref", "net.javamio.template.libs.geantyref")
 
         manifest {
             attributes["Implementation-Version"] = rootProject.version

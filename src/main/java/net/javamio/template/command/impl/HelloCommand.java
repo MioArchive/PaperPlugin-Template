@@ -1,21 +1,21 @@
 package net.javamio.template.command.impl;
 
-import net.javamio.template.command.BukkitCommand;
 import net.javamio.template.util.ColorUtil;
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.incendo.cloud.paper.PaperCommandManager;
+import org.incendo.cloud.paper.util.sender.PlayerSource;
+import org.incendo.cloud.paper.util.sender.Source;
 import org.jetbrains.annotations.NotNull;
 
-public class HelloCommand extends BukkitCommand {
+public final class HelloCommand {
 
-    public HelloCommand() {
-        super("hello", "hello.command");
-    }
-
-    @Override
-    public void onCommand(@NotNull CommandSender sender, @NotNull String label, @NotNull String[] args) {
-        if (!(sender instanceof Player player)) return;
-
-        player.sendMessage(ColorUtil.translateColorCodes("&aHello, &f" + player.getName() + "!"));
+    public static void register(@NotNull PaperCommandManager<Source> commandManager) {
+        commandManager.command(commandManager.commandBuilder("hello")
+                .senderType(PlayerSource.class)
+                .permission("hello.command")
+                .handler(context -> {
+                    Player player = context.sender().source();
+                    player.sendMessage(ColorUtil.translateColorCodes("&aHello, &f" + player.getName() + "!"));
+                }));
     }
 }

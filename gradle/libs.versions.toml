@@ -1,12 +1,14 @@
 [versions]
 paper-api = "1.21-R0.1-SNAPSHOT"
 lombok = "1.18.46"
+cloud-paper = "2.0.1"
 shadow = "9.5.1"
 run-paper = "3.0.2"
 
 [libraries]
 paper-api = { module = "io.papermc.paper:paper-api", version.ref = "paper-api" }
 lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" }
+cloud-paper = { module = "org.incendo:cloud-paper", version.ref = "cloud-paper" }
 
 [plugins]
 run-paper = { id = "xyz.jpenilla.run-paper", version.ref = "run-paper" }
