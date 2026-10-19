@@ -3,7 +3,7 @@ paper-api = "1.21-R0.1-SNAPSHOT"
 lombok = "1.18.46"
 cloud-paper = "2.0.1"
 shadow = "9.5.1"
-run-paper = "3.0.2"
+run-paper = "3.1.0"
 
 [libraries]
 paper-api = { module = "io.papermc.paper:paper-api", version.ref = "paper-api" }
